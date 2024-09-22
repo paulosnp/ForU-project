@@ -1,52 +1,105 @@
-body{
-    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/47c2bc92-5a2a-4f33-8f91-4314e9e62ef1/web/BR-pt-20240916-TRIFECTA-perspective_c2bebe15-295b-4009-9a1c-893d9f501956_large.jpg);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
-    height: 2000px;
-}
-
-.barra {
-    background-color: rgb(0, 0, 0, 0.5);
-    display: flex;
-    width: 100%;
-    position: fixed;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 
 }
 
-.navegacao {
-    display: flex;
-    position: absolute;
-    gap: 10px;
-    top: 200px;
-    flex-direction: ;
-    /*AJEITAR ESSA CLASSE, ISSO É UMA GAMBIARRA MAL FEITA, Ass: J Pedro */
-}
-
-
-.titulo {
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-size:80px;
-}
-
-.rodape a {
-    text-decoration: none;
-    color: white;
-}
-.botao{
-    gap: 10px;
-  background-color: rgb(0, 0, 0);
-    font-size: 40px;
+nav ul {
     list-style: none;
-    padding: 4%;
-    border-radius: 20px;
+    padding: 0;
 }
 
-.botao a {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
     text-decoration: none;
-    color: rgb(240, 11, 11);
-    
-   
 }
 
+.banner-filmes {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(20, 20, 20);
+}
 
+.filme {
+    text-align: center;
+    margin: 20px;
+}
+
+.filme img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+    width: 100%;
+    bottom: 0;
+}
+
+.banner-filmes h3{
+    color: white;
+}
+h2 {
+    color: white;
+}
+
+.navbar{
+    background-color: #171d21;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    position: fixed;
+    width: 100%;
+
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+.navbar ul li a:hover{
+    color: #e2d703;
+}
+.navbar ul .btn{
+    border: 2px solid #e2d703;
+    color: #e2d703;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #1d1a28;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.navbar ul .btn:is(:hover, :focus) {
+    background: #e2d703;
+    color: #1d1a28;
+}
