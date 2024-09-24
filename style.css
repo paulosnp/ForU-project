@@ -3,46 +3,46 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-
-}
-
-nav ul {
+  
+  }
+  
+  nav ul {
     list-style: none;
     padding: 0;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-.banner-filmes {
+  }
+  
+  .banner-filmes {
     padding: 20px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: rgb(20, 20, 20);
-}
-
-.filme {
+  }
+  
+  .filme {
     text-align: center;
     margin: 20px;
-}
-
-.filme img {
+  }
+  
+  .filme img {
     width: 300px;
     height: 450px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -50,45 +50,45 @@ footer {
     
     width: 100%;
     bottom: 0;
-}
-
-.banner-filmes h3{
+  }
+  
+  .banner-filmes h3{
     color: white;
-}
-h2 {
+  }
+  h2 {
     color: white;
-}
-
-.navbar{
-    background-color: #171d21;
+  }
+  
+  .navbar{
+    background-color: rgb(20,20,20);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
+    padding: 10px 20px;
     position: fixed;
     width: 100%;
-
-}
-.navbar ul{
+  
+  }
+  .navbar ul{
     display: flex;
     align-items: center;
     gap: 3rem;
-}
-.navbar ul li{
+  }
+  .navbar ul li{
     list-style: none;
-}
-.navbar ul li a{
+  }
+  .navbar ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     transition: 0.3s ease-in-out;
-}
-.navbar ul li a:hover{
+  }
+  .navbar ul li a:hover{
     color: #e2d703;
-}
-.navbar ul .btn{
+  }
+  .navbar ul .btn{
     border: 2px solid #e2d703;
     color: #e2d703;
     padding: 10px 30px;
@@ -98,8 +98,121 @@ h2 {
     background-color: #1d1a28;
     transition: 0.3s ease-in-out;
     cursor: pointer;
-}
-.navbar ul .btn:is(:hover, :focus) {
+  }
+  .navbar ul .btn:is(:hover, :focus) {
     background: #e2d703;
     color: #1d1a28;
+  }
+  
+  .parallax {
+    height: 100vh; /* Altura total da viewport */
+    background: linear-gradient(to bottom, rgb(20,20,20), rgba(255, 0, 0, 0), rgb(20,20,20)), 
+                url('https://occ-0-4354-1380.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSDPw9unf7VM6DvVAdwlU_JQUWz388ACoatYittb5zCQR0ZztD9BfyqnA36n23DpUeYN4e1cS6GcT5i0EQmKTyTQZZU9NvlSx-kC.webp?r=b7a') no-repeat center center fixed; 
+    background-size: cover;
+    position: relative;
+    z-index: -1; /* Fica atrás do conteúdo */
+  }
+  
+  /* Estilo para alinhar os ícones e texto */
+  .nav-list li a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    text-decoration: none;
+    color: #b2b2b2;
+  }
+  
+  .nav-list li a:hover {
+    color: #febe01; /* Mudar cor ao passar o mouse */
+  }
+
+  /* Estilo para a logo */
+.logo img {
+    width: 100px; /* Largura da logo */
+    height: auto; /* Mantém a proporção da logo */
+    margin-right: 10px; /* Espaçamento entre a logo e o restante da navegação */
+    vertical-align: center; /* Centraliza a logo verticalmente */
+    fill: white;
+}
+
+/* Estilo para alinhar os ícones e texto */
+.nav-list li a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+
+
+
+
+
+.banner-botoes {
+    position: absolute;
+    bottom: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    display: flex;
+    gap: 10px;
+    margin-bottom: 125px;
+    margin-left: 50px;
+}
+
+.botao-assistir,
+.botao-mais-informacoes {
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.botao-assistir {
+    background-color: #ffffff; /* Cor de fundo branca */
+    color: #000000; /* Cor do texto preta */
+}
+
+.botao-mais-informacoes {
+    background-color: rgba(109, 109, 110, 0.7); /* Fundo cinza com transparência */
+    color: #ffffff; /* Cor do texto branca */
+}
+
+.botao-assistir i,
+.botao-mais-informacoes i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Hover Effects */
+.botao-assistir:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparência no hover */
+}
+
+.botao-mais-informacoes:hover {
+    background-color: rgba(109, 109, 110, 0.9); /* Mais opaco no hover */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .banner-principal {
+        padding: 0 20px;
+        height: 400px;
+    }
+
+    .botao-assistir,
+    .botao-mais-informacoes {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    .banner-botoes {
+        margin-bottom: 20px;
+        gap: 10px;
+    }
 }

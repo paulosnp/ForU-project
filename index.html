@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForU - Assista Filmes e Séries</title>
     <link rel="stylesheet" href="/Front_end_project/style.css">
+    <!-- Adicionando o Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    
     <header>
         <nav class="navbar">
           <div class="logo">
-            <a href=""><img src="" alt="" /></a>
+            <a href="">
+              <!-- Adicionando a imagem da logo -->
+              <img src="/Front_end_project/images/icons/logo_white.svg" alt="Logo do site">
+            </a>
           </div>
           <ul class="nav-list">
-            <div class="logo">
-              <a href=""><img src=";" alt=""></a>
-            </div>
-            <li class="home"><a href="">home</a></li>
-            <li><a href="">Filmes</a></li>
-            <li><a href="">Séries</a></li>
+            <!-- Adicionando os ícones nas opções do menu -->
+            <li class="home"><a href=""><i class="fas fa-home"></i> Home</a></li>
+            <li><a href=""><i class="fas fa-film"></i> Filmes</a></li>
+            <li><a href=""><i class="fas fa-tv"></i> Séries</a></li>
           </ul>
           <div class="hamburger">
             <div class="line"></div>
@@ -27,45 +31,58 @@
         </nav>
       </header>
 
+      <div class="banner-principal">
+        <div class="parallax"></div>
+        
+        <!-- Botões Assistir e Mais Informações -->
+        <div class="banner-botoes">
+            <button class="botao-assistir">
+                <i class="fas fa-play"></i> Assistir
+            </button>
+            <button class="botao-mais-informacoes">
+                <i class="fas fa-info-circle"></i> Mais informações
+            </button>
+        </div>
+      </div>
+
     <section class="banner-filmes">
         <h2>Filmes em Destaque</h2>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 1">
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zjdB4LxQfkAx5g2hcFbUXND3n2u.jpg" alt="Minecraft-The Movie">
             <h3>Minecraft-The Movie</h3>
         </div>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 2">
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y3IhuITELtprMhUd7bccu629rba.jpg" alt="O Alto da Compadecida">
             <h3>O Alto da Compadecida</h3>
         </div>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 3">
-            <h3>Dark Souls-The Movie</h3>
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/slyJHnhfs2rP6KmCwm0EbKq3hoz.jpg" alt="Super-Héroi o Filme">
+            <h3>Super-Héroi o Filme</h3>
         </div>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 4">
-            <h3>Filme 4</h3>
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/faZQGpJP6cXkJvZzymzaUGu0mT6.jpg" alt="Hancock">
+            <h3>Hancock</h3>
         </div>
     </section>
     <section class="banner-filmes">
         <h2>Séries em Destaque</h2>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 1">
-            <h3>Filme 1</h3>
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30erzlzIOtOK3k3T3BAl1GiVMP1.jpg" alt="Breaking Bad">
+            <h3>Breaking Bad</h3>
         </div>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 2">
-            <h3>Filme 2</h3>
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fgJFzeSSD4owhMPSh7SMpJPof3D.jpg" alt="Arcane">
+            <h3>Arcane</h3>
         </div>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 3">
-            <h3>Filme 3</h3>
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg" alt="Love Death Robots">
+            <h3>Love Death Robots</h3>
         </div>
         <div class="filme">
-            <img src="https://via.placeholder.com/300x450" alt="Filme 4">
-            <h3>Filme 4</h3>
+            <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jgd86jJQGAl1GYThvd8oHLIy5AG.jpg" alt="Avenida Brasil">
+            <h3>Avenida Brasil </h3>
         </div>
     </section>
-
 
     <footer>
         <p>© 2024 Meu Site de Filmes. Todos os direitos reservados.</p>
