@@ -154,10 +154,10 @@ h2 {
 .botao-mais-informacoes {
   display: flex;
   align-items: center;
-  padding: 10px 25px;
+  padding: 15px 35px;
   border: none;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -167,6 +167,7 @@ h2 {
 .botao-assistir {
   background-color: #ffffff;
   color: #000000;
+  font-size: 22px;
 }
 
 .botao-mais-informacoes {
@@ -293,3 +294,21 @@ h2 {
   font-size: 14px;
 }
 
+.banner-conteudo {
+  position: absolute;
+  bottom: 200px; /* Distância dos botões */
+  left: 75px; /* Alinha com o início dos botões */
+  color: white;
+  max-width: 600px; /* Limite de largura para o título e descrição */
+}
+
+.titulo-filme {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.descricao-filme {
+  font-size: 18px;
+  margin-top: 10px;
+}
