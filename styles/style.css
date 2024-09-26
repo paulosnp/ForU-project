@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: #e2e2e2; /* Cor do texto mais clara para contraste */
+  color: #e2e2e2;
 }
 
 nav ul {
@@ -69,7 +69,7 @@ h2 {
   padding: 10px 20px;
   position: fixed;
   width: 100%;
-  z-index: 10; /* Garanta que o navbar fique acima de outros elementos */
+  z-index: 10;
 }
 
 .navbar ul {
@@ -114,7 +114,7 @@ h2 {
 
 .parallax {
   height: 100vh;
-  background: linear-gradient(to bottom, rgb(20, 20, 20), rgba(255, 0, 0, 0), rgb(20, 20, 20)), url('https://occ-0-4354-1380.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSDPw9unf7VM6DvVAdwlU_JQUWz388ACoatYittb5zCQR0ZztD9BfyqnA36n23DpUeYN4e1cS6GcT5i0EQmKTyTQZZU9NvlSx-kC.webp?r=b7a') no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgb(20, 20, 20), rgba(255, 0, 0, 0), rgb(20, 20, 20)), url('https://tm.ibxk.com.br/2024/09/10/10113417104114.jpg') no-repeat center center fixed;
   background-size: cover;
   position: relative;
   z-index: -1;
@@ -165,7 +165,7 @@ h2 {
 }
 
 .botao-assistir {
-  background-color: #ffffff;
+  background-color: #febe01;
   color: #000000;
   font-size: 22px;
 }
@@ -206,7 +206,7 @@ h2 {
       gap: 10px;
   }
 
-  /* Melhorias em mobile */
+
   .navbar ul {
       flex-direction: column;
       gap: 1rem;
@@ -219,24 +219,24 @@ h2 {
 .navbar {
     background-color: rgb(20, 20, 20);
     display: flex;
-    align-items: flex-end; /* Alinha o conteúdo no final (base) do header */
+    align-items: flex-end;
     justify-content: space-between;
     padding: 10px 20px;
     position: fixed;
     width: 100%;
-    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    box-sizing: border-box;
 }
 
 .logo img {
     width: 100px;
     height: auto;
     margin: 0;
-    vertical-align: bottom; /* Alinha a base da logo com a base do header */
+    vertical-align: bottom;
 }
 
 .nav-list {
     display: flex;
-    align-items: flex-end; /* Certifica que os links do menu também estejam alinhados na base */
+    align-items: flex-end;
     gap: 3rem;
 }
 
@@ -260,7 +260,7 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-/* Transição suave no hover */
+
 .filme:hover img {
   transform: scale(1.05);
 }
@@ -270,18 +270,18 @@ h2 {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7); /* Fundo escuro semitransparente */
+  background: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 10px;
-  opacity: 0; /* Invisível por padrão */
-  transform: translateY(100%); /* Posicionado fora da visão */
+  opacity: 0;
+  transform: translateY(100%);
   transition: all 0.3s ease;
   text-align: center;
 }
 
 .filme:hover .info-filme {
-  opacity: 1; /* Fica visível no hover */
-  transform: translateY(0); /* Volta para a posição normal */
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .info-filme h3 {
@@ -296,10 +296,10 @@ h2 {
 
 .banner-conteudo {
   position: absolute;
-  bottom: 200px; /* Distância dos botões */
-  left: 75px; /* Alinha com o início dos botões */
+  bottom: 200px;
+  left: 75px;
   color: white;
-  max-width: 600px; /* Limite de largura para o título e descrição */
+  max-width: 600px;
 }
 
 .titulo-filme {
@@ -311,4 +311,92 @@ h2 {
 .descricao-filme {
   font-size: 18px;
   margin-top: 10px;
+}
+
+
+.top-3 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(20, 20, 20);
+}
+
+.filme-top {
+  position: relative;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+}
+
+.filme-top img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.numero-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #febe01;
+  color: #332200;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filme-top .info-filme {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.filme-top:hover .info-filme {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filme-top h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.filme-top p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.banner-filmes {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(20, 20, 20);
+}
+
+.titulo-filmes {
+  color: #e2d703;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }

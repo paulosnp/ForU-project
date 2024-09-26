@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForU - Assista Filmes e Séries</title> 
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>ForU - Assista Filmes e Séries</title>
+    <link rel="icon" href="./images/icons/icon-tab.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styleSerieModelo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- SEO meta tags -->
-    <meta name="description" content="Assista os melhores filmes e séries na ForU. Diversas opções de entretenimento para você!">
-    <meta name="keywords" content="filmes, séries, assistir, streaming, ForU">
-    <meta name="author" content="ForU Ltda">
 </head>
 <body>
-    
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="">
-                    <img src="/Front_end_project/images/icons/logo_white.svg" alt="Logo ForU">
+                <a href="./index.html">
+                    <img src="./images/icons/logo_white.svg" alt="Logo ForU">
                 </a>
             </div>
             <ul class="nav-list">
                 <li class="home"><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="./FilmeModelo.html"><i class="fas fa-film"></i> Filmes</a></li>
-                <li><a href="./SerieModelo.html"><i class="fas fa-tv"></i> Séries</a></li>
+                <li><a href="./HomeFilme.html"><i class="fas fa-film"></i> Filmes</a></li>
+                <li><a href="./HomeSerie.html"><i class="fas fa-tv"></i> Séries</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -33,79 +29,78 @@
         </nav>
     </header>
 
-    <div class="banner-principal">
-        <!-- Ajuste de acessibilidade com alt descritivo para elementos visuais -->
-        <div class="parallax" role="img" aria-label="Imagem de fundo do banner com efeitos visuais"></div>
-        
-        <!-- Título grande do filme -->
-        <div class="banner-conteudo">
-            <h1 class="titulo-filme">A Cabana</h1>
-            <p class="descricao-filme">Mack Phillips sofreu uma perda trágica. Agora, em busca de
-                respostas depois de receber uma carta misteriosa, precisa ir a uma
-                cabana no deserto do Oregon.</p>
+    <section class="filme-destaque">
+        <div class="filme-bg">
+            <div class="filme-info">
+                <h1 class="filme-titulo">Breaking Bad</h1>
+                <div class="filme-detalhes">
+                    <span><i class="fas fa-calendar-alt"></i> 2008</span>
+                    <span><i class="fas fa-clock"></i> 5 temporadas</span>
+                    <span class="filme-avaliacao">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                </div>
+                <p class="filme-diretor"><strong>Diretor:</strong>Vince Gilligan</p>
+                    <p class="filme-elenco"><strong>Elenco:</strong> Bryan Cranston, Aaron Paul, Anna Gunn</p>
+                <p class="filme-sinopse">O professor de química Walter White não acredita que sua vida possa piorar ainda mais. Quando descobre que tem câncer terminal, Walter decide arriscar tudo para ganhar dinheiro enquanto pode, transformando sua van em um laboratório de metanfetamina.</p>
+                <div class="filme-botoes">
+                    <button class="botao-assistir"><i class="fas fa-play"></i> Assistir</button>
+                    <button class="botao-mais-info"><i class="fas fa-info-circle"></i> Mais Informações</button>
+                </div>
+            </div>
         </div>
-    
-        <div class="banner-botoes">
-            <button class="botao-assistir" aria-label="Assistir agora">
-                <i class="fas fa-play"></i> Assistir
-            </button>
-            <button class="botao-mais-informacoes" aria-label="Mais informações sobre o conteúdo">
-                <i class="fas fa-info-circle"></i> Mais informações
-            </button>
+    </section>
+
+    <section class="episodios">
+        <h2>Episódios da Série</h2>
+        <ul class="episodios-lista">
+            <li>
+                <div class="episodio">
+                    <h3>Episódio 1: Piloto</h3>
+                    <p>Depois de um momento tenso na terceira temporada em que Walt e Jesse batalharam por suas vidas, a dupla aguarda para ver os próximos passos de Gus.</p>
+                    <button class="botao-assistir-episodio"><i class="fas fa-play"></i> Assistir</button>
+                </div>
+            </li>
+            <li>
+                <div class="episodio">
+                    <h3>Episódio 2: Cat's in the Bag</h3>
+                    <p>Walter e Jesse precisam decidir o que fazer com os corpos de Emilio e Krazy 8, após o desastre ocorrido no deserto. Skyler começa a suspeitar das recentes atividades de Walt.</p>
+                    <button class="botao-assistir-episodio"><i class="fas fa-play"></i> Assistir</button>
+                </div>
+            </li>
+            <li>
+                <div class="episodio">
+                    <h3>Episódio 3: And the Bag's in the River</h3>
+                    <p>Depois de uma discussão com Jesse, Walter tem que lidar sozinho com Krazy 8; Marie desconfia que Walt Jr. está fumando maconha, e Hank conversa com ele sobre os perigos do uso de drogas.</p>
+                    <button class="botao-assistir-episodio"><i class="fas fa-play"></i> Assistir</button>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="comentarios">
+        <h2>Comentários</h2>
+        <div class="comentario">
+            <p><strong>Dapra20comer:</strong> Excelente série! Recomendo muito.</p>
         </div>
-    </div>
-
-    <main>
-        <!-- Usar section para organizar melhor a estrutura semântica do HTML -->
-
-
-        <section class="banner-filmes">
-            <h2>Séries em Destaque</h2>
-            <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30erzlzIOtOK3k3T3BAl1GiVMP1.jpg" alt="Breaking Bad">
-                <div class="info-filme">
-                    <h3>Breaking Bad</h3>
-                    <p>Walter White é um professor de química na casa dos 50 anos que trabalha em uma escola secundária no Novo México. Para atender às necessidades de Skyler , sua esposa grávida, e Walt Junior , seu filho deficiente físico, ele tem que trabalhar duplamente.
-                    </p>
-                </div>
-            </div>
-            <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fgJFzeSSD4owhMPSh7SMpJPof3D.jpg" alt="Arcane">
-                <div class="info-filme">
-                    <h3>Arcane</h3>
-                    <p>Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam em lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis.</p>
-                </div>
-            </div>
-            <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg" alt="Love Death Robots">
-                <div class="info-filme">
-                    <h3>Love Death Robots</h3>
-                    <p>Love, Death & Robots é uma série de antologia que reúne contos animados em uma mistura de ficção científica, fantasia, terror e comédia.</p>
-                </div>
-            </div>
-            <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jgd86jJQGAl1GYThvd8oHLIy5AG.jpg" alt="Avenida Brasil">
-                <div class="info-filme">
-                    <h3>Avenida Brasil</h3>
-                    <p>Conta a história de uma jovem que, desde a infância, planeja um acerto de contas com a madrasta.</p>
-                </div>
-            </div>
-        </section>
-        
-    </main>
+        <div class="comentario">
+            <p><strong>TatyComendo:</strong> Achei a trama um pouco lenta, mas o final foi incrível.</p>
+        </div>
+        <div class="adicionar-comentario">
+            <textarea placeholder="Adicionar comentário..."></textarea>
+            <button>Enviar</button>
+        </div>
+    </section>
 
     <footer>
         <p>© 2024 ForU Ltda. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script de interação móvel (Hamburger menu) -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navList = document.querySelector('.nav-list');
-
-        hamburger.addEventListener('click', () => {
-            navList.classList.toggle('active');
-        });
-    </script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

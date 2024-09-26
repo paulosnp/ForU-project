@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForU - Assista Filmes e Séries</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- SEO meta tags -->
+    <link rel="icon" href="./images/icons/icon-tab.png" type="image/x-icon">
     <meta name="description" content="Assista os melhores filmes e séries na ForU. Diversas opções de entretenimento para você!">
     <meta name="keywords" content="filmes, séries, assistir, streaming, ForU">
     <meta name="author" content="ForU Ltda">
@@ -16,14 +16,14 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="">
-                    <img src="/Front_end_project/images/icons/logo_white.svg" alt="Logo ForU">
+                <a href="./index.html">
+                    <img src="./images/icons/logo_white.svg" alt="Logo ForU">
                 </a>
             </div>
             <ul class="nav-list">
                 <li class="home"><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="./FilmeModelo.html"><i class="fas fa-film"></i> Filmes</a></li>
-                <li><a href="./SerieModelo.html"><i class="fas fa-tv"></i> Séries</a></li>
+                <li><a href="./HomeFilme.html"><i class="fas fa-film"></i> Filmes</a></li>
+                <li><a href="./HomeSerie.html"><i class="fas fa-tv"></i> Séries</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -34,10 +34,11 @@
     </header>
 
     <div class="banner-principal">
-        <!-- Ajuste de acessibilidade com alt descritivo para elementos visuais -->
+
         <div class="parallax" role="img" aria-label="Imagem de fundo do banner com efeitos visuais"></div>
         
-        <!-- Título grande do filme -->
+
+         <div></div>
         <div class="banner-conteudo">
             <h1 class="titulo-filme">A Cabana</h1>
             <p class="descricao-filme">Mack Phillips sofreu uma perda trágica. Agora, em busca de
@@ -46,21 +47,49 @@
         </div>
     
         <div class="banner-botoes">
-            <button class="botao-assistir" aria-label="Assistir agora">
+            <button onclick="window.location.href='./FilmeModelo.html'" class="botao-assistir" aria-label="Assistir agora">
                 <i class="fas fa-play"></i> Assistir
             </button>
-            <button class="botao-mais-informacoes" aria-label="Mais informações sobre o conteúdo">
+            <button onclick="window.location.href='./FilmeModelo.html'" class="botao-mais-informacoes" aria-label="Mais informações sobre o conteúdo">
                 <i class="fas fa-info-circle"></i> Mais informações
             </button>
         </div>
     </div>
 
+    <section class="top-3">
+        <h2 class="titulo-filmes">TOP 3 Destaques</h2>
+        <div class="filme-top">
+            <img onclick="window.location.href='./SerieModelo.html'"src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30erzlzIOtOK3k3T3BAl1GiVMP1.jpg" alt="Filme 1">
+            <div class="info-filme">
+                <h3>Breaking Bad</h3>
+                <p>2008</p>
+            </div>
+            <span class="numero-top">1</span>
+        </div>
+        <div class="filme-top">
+            <img onclick="window.location.href='./SerieModelo.html'"src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fgJFzeSSD4owhMPSh7SMpJPof3D.jpg" alt="Filme 2">
+            <div class="info-filme">
+                <h3>Arcane</h3>
+                <p>2021</p>
+            </div>
+            <span class="numero-top">2</span>
+        </div>
+        <div class="filme-top">
+            <img onclick="window.location.href='./SerieModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg" alt="Filme 3">
+            <div class="info-filme">
+                <h3>Love Death Robots</h3>
+                <p>2019</p>
+            </div>
+            <span class="numero-top">3</span>
+        </div>
+    </section>
+
     <main>
-        <!-- Usar section para organizar melhor a estrutura semântica do HTML -->
+
         <section class="banner-filmes">
-            <h2>Filmes em Destaque</h2>
+            <h2 class="titulo-filmes">Filmes recentes</h2>
     <div class="filme">
-        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zjdB4LxQfkAx5g2hcFbUXND3n2u.jpg" alt="Um Filme Minecraft">
+        <img onclick="window.location.href='./FilmeModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/zjdB4LxQfkAx5g2hcFbUXND3n2u.jpg" alt="Um Filme Minecraft">
         <div class="info-filme">
             <h3>Um Filme Minecraft</h3>
             <p>Bem-vindo ao mundo do Minecraft, onde a criatividade não apenas ajuda você a se divertir como construtor, mas também é essencial para a sua sobrevivência! Quatro desajustados envolvidos com seus problemas do dia a dia, de repente são transportados, por um misterioso portal, para Overworld: um bizarro país das maravilhas cúbico onde impera a imaginação.
@@ -68,32 +97,33 @@
         </div>
     </div>
     <div class="filme">
-        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y3IhuITELtprMhUd7bccu629rba.jpg" alt="O Alto da Compadecida">
+        <img onclick="window.location.href='./FilmeModelo.html'"src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/y3IhuITELtprMhUd7bccu629rba.jpg" alt="O Alto da Compadecida">
         <div class="info-filme">
             <h3>O Alto da Compadecida</h3>
             <p>As aventuras de João Grilo e Chicó, dois nordestinos pobres que vivem de golpes para sobreviver. Eles estão sempre enganando o povo de um pequeno vilarejo, inclusive o temido cangaceiro Severino de Aracaju, que os persegue pela região.</p>
         </div>
     </div>
     <div class="filme">
-        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/slyJHnhfs2rP6KmCwm0EbKq3hoz.jpg" alt="Super-Héroi o Filme">
+        <img onclick="window.location.href='./FilmeModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/slyJHnhfs2rP6KmCwm0EbKq3hoz.jpg" alt="Super-Héroi o Filme">
         <div class="info-filme">
             <h3>Super-Héroi o Filme</h3>
             <p>O jovem estudante Rick Riker tem sua vida mudada quando, numa excursão a um laboratório de pesquisa animal, é picado por uma libélula geneticamente alterada. No dia seguinte, ele acorda com superpoderes.</p>
         </div>
     </div>
     <div class="filme">
-        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/faZQGpJP6cXkJvZzymzaUGu0mT6.jpg" alt="Hancock">
+        <img onclick="window.location.href='./FilmeModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/kzTLBnbXURTjNEi0JOyCNgdTYwv.jpg" alt="Coringa: Delírio a Dois">
         <div class="info-filme">
-            <h3>Hancock</h3>
-            <p>Hancock é um super-herói desajeitado que protege os cidadãos de Los Angeles, mas causa danos colaterais a cada ato heroico que realiza. Ele não se importa com o que as pessoas pensam a seu respeito. Depois de salvar a vida de um executivo, ele conhece a bela esposa do homem e descobre que, apesar de tudo, é um sujeito sensível.</p>
+            <h3>Coringa: Delírio a Dois</h3>
+            <p>Isolado, intimidado e desconsiderado pela sociedade, o fracassado comediante Arthur Fleck inicia seu caminho como uma mente criminosa após assassinar três homens em pleno metrô. Sua ação inicia um movimento popular contra a elite de Gotham City, da qual Thomas Wayne é seu maior representante.
+            </p>
         </div>
     </div>
         </section>
 
         <section class="banner-filmes">
-            <h2>Séries em Destaque</h2>
+            <h2 class="titulo-filmes">Séries recentes</h2>
             <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30erzlzIOtOK3k3T3BAl1GiVMP1.jpg" alt="Breaking Bad">
+                <img onclick="window.location.href='./SerieModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/30erzlzIOtOK3k3T3BAl1GiVMP1.jpg" alt="Breaking Bad">
                 <div class="info-filme">
                     <h3>Breaking Bad</h3>
                     <p>Walter White é um professor de química na casa dos 50 anos que trabalha em uma escola secundária no Novo México. Para atender às necessidades de Skyler , sua esposa grávida, e Walt Junior , seu filho deficiente físico, ele tem que trabalhar duplamente.
@@ -101,21 +131,21 @@
                 </div>
             </div>
             <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fgJFzeSSD4owhMPSh7SMpJPof3D.jpg" alt="Arcane">
+                <img onclick="window.location.href='./SerieModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/fgJFzeSSD4owhMPSh7SMpJPof3D.jpg" alt="Arcane">
                 <div class="info-filme">
                     <h3>Arcane</h3>
                     <p>Em meio ao conflito entre as cidades-gêmeas de Piltover e Zaun, duas irmãs lutam em lados opostos de uma guerra entre tecnologias mágicas e convicções incompatíveis.</p>
                 </div>
             </div>
             <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg" alt="Love Death Robots">
+                <img onclick="window.location.href='./SerieModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg" alt="Love Death Robots">
                 <div class="info-filme">
                     <h3>Love Death Robots</h3>
                     <p>Love, Death & Robots é uma série de antologia que reúne contos animados em uma mistura de ficção científica, fantasia, terror e comédia.</p>
                 </div>
             </div>
             <div class="filme">
-                <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jgd86jJQGAl1GYThvd8oHLIy5AG.jpg" alt="Avenida Brasil">
+                <img onclick="window.location.href='./SerieModelo.html'" src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/jgd86jJQGAl1GYThvd8oHLIy5AG.jpg" alt="Avenida Brasil">
                 <div class="info-filme">
                     <h3>Avenida Brasil</h3>
                     <p>Conta a história de uma jovem que, desde a infância, planeja um acerto de contas com a madrasta.</p>
@@ -129,7 +159,7 @@
         <p>© 2024 ForU Ltda. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Script de interação móvel (Hamburger menu) -->
+
     <script>
         const hamburger = document.querySelector('.hamburger');
         const navList = document.querySelector('.nav-list');
